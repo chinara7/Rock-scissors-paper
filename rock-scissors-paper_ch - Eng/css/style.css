@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+body {
+  background-image: url("../image/wall7.PNG");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.body {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.neon {
+  /* position: absolute; */
+  height: 10%;
+  width: auto;
+  font-weight: 200;
+  text-align: center;
+  font-size: 50px;
+  margin-top: 20px;
+  color: #fff;
+  text-shadow: 0 0 7px #ffa502, 0 0 10px #ffa502, 0 0 30px #ffa502,
+    0 0 50px #ffa502;
+}
+
+.neon:hover {
+  text-shadow: 0 0 7px #ffa502, 0 0 10px #ffa502, 0 0 21px #ffa502,
+    0 0 42px #ffa502, 0 0 82px #ffa502, 0 0 92px #ffa502, 0 0 102px #ffa502,
+    0 0 151px #ffa502;
+}
+
+.choice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 65%;
+  width: 86%;
+}
+
+.start-game {
+  height: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-start {
+  cursor: pointer;
+}
+
+.person1,
+.person2 {
+  border: 2px solid #fff;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  margin: 0 15px;
+  padding: 15px;
+  background-color: #f1f2f6;
+  border: 2px solid;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  height: 80%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.person1 h2,
+.person2 h2 {
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.person1 button,
+.person2 button {
+  margin-top: 7px;
+  margin-left: 40%;
+}
+
+.avatar {
+  display: flex;
+}
+
+.avatar p {
+  margin: 0 5px;
+}
+
+.avatar img {
+  margin: 0 6px;
+  width: 65%;
+}
+
+.playground {
+  background-color: #fff;
+  height: 60%;
+  width: 55%;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  padding: 15px;
+  background-color: #f1f2f6;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 5px 30px 5px rgba(0, 0, 0, 0.5);
+  visibility: hidden;
+}
+
+.score {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 25%;
+}
+
+.players-score {
+  display: flex;
+  justify-content: space-between;
+  width: 50px;
+}
+
+.players-score:nth-child(2),
+.player1-score,
+.player2-score {
+  font-size: 25px;
+}
+
+.players {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50%;
+}
+
+.player1-data,
+.player2-data {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.player1,
+.player2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.player1-img,
+.player2-img {
+  width: 15%;
+}
+
+.player1-name,
+.player2-name {
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 20px 20px 0;
+}
+
+.player1-hand,
+.player2-hand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.player1-hand img,
+.player2-hand img {
+  width: 35%;
+  height: 35%;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.play-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 25%;
+}
+
+.play-btn button {
+  outline: none;
+  font-size: 100%;
+}
+
+.fa-play {
+  color: cornsilk;
+}
+
+.result {
+  align-items: center;
+  justify-content: center;
+}
+
+.final-result {
+    visibility: hidden;
+  /* display: none; */
+  font-weight: 700;
+  color: #c0392b;
+  font-size: 180%;
+}
+
+.again {
+  visibility: hidden;
+  /* margin-top: -50%; */
+}
